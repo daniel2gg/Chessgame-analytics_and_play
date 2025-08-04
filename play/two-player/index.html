@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Two Player Chess</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 40px);
+      grid-template-rows: repeat(8, 40px);
+      gap: 0;
+      margin-top: 20px;
+    }
+    .cell {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .white {
+      background-color: #eee;
+    }
+    .black {
+      background-color: #888;
+    }
+    .highlight {
+      outline: 2px solid yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Two Player Mode ♟️</h1>
+  <div id="chessboard"></div>
+  <script src="script.js"></script>
+</body>
+</html>
